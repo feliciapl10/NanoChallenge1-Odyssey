@@ -16,6 +16,13 @@
 		E1055AD028193C1A00D22292 /* Nano_Challenge_Travel_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1055ACF28193C1A00D22292 /* Nano_Challenge_Travel_AppTests.swift */; };
 		E1055ADA28193C1A00D22292 /* Nano_Challenge_Travel_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1055AD928193C1A00D22292 /* Nano_Challenge_Travel_AppUITests.swift */; };
 		E1055ADC28193C1A00D22292 /* Nano_Challenge_Travel_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1055ADB28193C1A00D22292 /* Nano_Challenge_Travel_AppUITestsLaunchTests.swift */; };
+		E15B70F8281A4F2F003201B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B70F7281A4F2F003201B6 /* SecondViewController.swift */; };
+		E15B70FA281A7FAA003201B6 /* LoremIpsumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B70F9281A7FAA003201B6 /* LoremIpsumViewController.swift */; };
+		E15B70FC281A9152003201B6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B70FB281A9152003201B6 /* ThirdViewController.swift */; };
+		E15B70FE281A9177003201B6 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15B70FD281A9177003201B6 /* FourthViewController.swift */; };
+		E15D5C37281A311800B057CB /* JournalHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D5C35281A311800B057CB /* JournalHome.swift */; };
+		E15D5C38281A311800B057CB /* JournalHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15D5C36281A311800B057CB /* JournalHome.xib */; };
+		E1CDAF63281AE953005A4EAF /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CDAF62281AE953005A4EAF /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		E1055AD528193C1A00D22292 /* Nano Challenge Travel AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nano Challenge Travel AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1055AD928193C1A00D22292 /* Nano_Challenge_Travel_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_Travel_AppUITests.swift; sourceTree = "<group>"; };
 		E1055ADB28193C1A00D22292 /* Nano_Challenge_Travel_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_Travel_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E15B70F7281A4F2F003201B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E15B70F9281A7FAA003201B6 /* LoremIpsumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsumViewController.swift; sourceTree = "<group>"; };
+		E15B70FB281A9152003201B6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		E15B70FD281A9177003201B6 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		E15D5C35281A311800B057CB /* JournalHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalHome.swift; sourceTree = "<group>"; };
+		E15D5C36281A311800B057CB /* JournalHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JournalHome.xib; sourceTree = "<group>"; };
+		E1CDAF62281AE953005A4EAF /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +113,18 @@
 		E1055AB728193C1800D22292 /* Nano Challenge Travel App */ = {
 			isa = PBXGroup;
 			children = (
+				E1055AC128193C1900D22292 /* Assets.xcassets */,
 				E1055AB828193C1800D22292 /* AppDelegate.swift */,
 				E1055ABA28193C1800D22292 /* SceneDelegate.swift */,
 				E1055ABC28193C1800D22292 /* ViewController.swift */,
+				E15D5C35281A311800B057CB /* JournalHome.swift */,
+				E15D5C36281A311800B057CB /* JournalHome.xib */,
 				E1055ABE28193C1800D22292 /* Main.storyboard */,
-				E1055AC128193C1900D22292 /* Assets.xcassets */,
+				E1CDAF62281AE953005A4EAF /* EditViewController.swift */,
+				E15B70F9281A7FAA003201B6 /* LoremIpsumViewController.swift */,
+				E15B70F7281A4F2F003201B6 /* SecondViewController.swift */,
+				E15B70FD281A9177003201B6 /* FourthViewController.swift */,
+				E15B70FB281A9152003201B6 /* ThirdViewController.swift */,
 				E1055AC328193C1900D22292 /* LaunchScreen.storyboard */,
 				E1055AC628193C1900D22292 /* Info.plist */,
 			);
@@ -232,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1055AC528193C1900D22292 /* LaunchScreen.storyboard in Resources */,
+				E15D5C38281A311800B057CB /* JournalHome.xib in Resources */,
 				E1055AC228193C1900D22292 /* Assets.xcassets in Resources */,
 				E1055AC028193C1800D22292 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1055ABD28193C1800D22292 /* ViewController.swift in Sources */,
+				E15D5C37281A311800B057CB /* JournalHome.swift in Sources */,
 				E1055AB928193C1800D22292 /* AppDelegate.swift in Sources */,
+				E15B70FC281A9152003201B6 /* ThirdViewController.swift in Sources */,
+				E15B70FE281A9177003201B6 /* FourthViewController.swift in Sources */,
+				E15B70FA281A7FAA003201B6 /* LoremIpsumViewController.swift in Sources */,
+				E15B70F8281A4F2F003201B6 /* SecondViewController.swift in Sources */,
 				E1055ABB28193C1800D22292 /* SceneDelegate.swift in Sources */,
+				E1CDAF63281AE953005A4EAF /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +468,7 @@
 				DEVELOPMENT_TEAM = BGK6NN8568;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Nano Challenge Travel App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Odyssey;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +497,7 @@
 				DEVELOPMENT_TEAM = BGK6NN8568;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Nano Challenge Travel App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Odyssey;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
