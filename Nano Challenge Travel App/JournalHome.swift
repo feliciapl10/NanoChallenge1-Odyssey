@@ -13,6 +13,8 @@ struct Journal {
     var image: UIImage
     var date: String
     var location: String
+    var story: String 
+    var chapterSubtitle: String
 }
 
 class JournalHome: UITableViewCell {

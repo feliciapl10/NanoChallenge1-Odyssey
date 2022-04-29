@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-    var array: [Journal] = [Journal(title: "Lorem Ipsum", subtitle: "This is lorem ipsum subtitle", image: UIImage(named: "loremipsum")!, date: "Wednesday, 27 April 2022", location: "Bandung, Indonesia"),
-        Journal(title: "Veni Vidi Vici", subtitle: "Means I came, I saw, I conquered", image: UIImage(named: "venividivici")!, date: "Thursday, 28 April 2022", location: "Jakarta, Indonesia")
+    var array: [Journal] = [Journal(title: "Lorem Ipsum", subtitle: "This is lorem ipsum subtitle", image: UIImage(named: "loremipsum")!, date: "Wednesday, 27 April 2022", location: "Bandung, Indonesia", story: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", chapterSubtitle: "What is lorem ipsum?"),
+        Journal(title: "Veni Vidi Vici", subtitle: "Means I came, I saw, I conquered", image: UIImage(named: "venividivici")!, date: "Thursday, 28 April 2022", location: "Jakarta, Indonesia", story: "this is the content of the veni vidi vici story", chapterSubtitle: "What is veni vidi vici?")
     ]
 
     @IBOutlet weak var TableViewHome: UITableView!
@@ -43,8 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         cell?.JournalLocation.text = array[indexPath.row].location
         cell?.JournalPhoto.image = array[indexPath.row].image
 
-        
-        
         return cell ?? JournalHome()
     }
     
@@ -64,6 +62,14 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
 //        return "Journal"
 //    }
     
+    //this is to transfer data to the lorem ipsum page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let journal = array[selectedIndex]
+        if segue.identifier == "toDetails" {
+            let detailVC = segue.destination as? LoremIpsumViewController
+            detailVC?.journal = journal
+        }
+    }
     
 }
 

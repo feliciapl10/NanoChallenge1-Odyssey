@@ -18,30 +18,32 @@ class LoremIpsumViewController: UIViewController {
     var journal : Journal?
     
    //tutorial passing data
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var firstStoryLabel: UILabel!
+    @IBOutlet weak var firstSubtitleLabel: UILabel!
     
-    var subtitle:String?
+    
     weak var delegate: LoremIpsumViewControllerDelegate?
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        label.text = myString
-//
-//    }
-    
-    
     
     override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
         }
     
+    //this is data transferred from home page to lorem ipsum page
     override func viewWillAppear(_ animated: Bool) {
-            if let subtitleExist = subtitle {
-                label.text = subtitleExist
+            if let journalExist = journal {
+                firstStoryLabel.text = journalExist.story
+                firstSubtitleLabel.text = journalExist.chapterSubtitle
             }
+    }
+    
+    //this is to transfer data from lorem ipsum to edit controller page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditButton" {
+            let destination = segue.destination as? EditViewController
+            destination?.journal = journal
         }
+    }
     
     //this is the back button
     @IBAction func chevronLeft(_ sender: Any) {
@@ -51,8 +53,12 @@ class LoremIpsumViewController: UIViewController {
     //this is the edit pencil button
     @IBAction func EditButton(_ sender: Any) {
         performSegue(withIdentifier: "EditButton", sender: self)
+        print("tapped")
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "toChapter") as! EditViewController
+////            self.navigationController?.popToRootViewController(animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
+
     }
-    
 }
 
     
